@@ -13,4 +13,4 @@ The ROS2 listener will listen to msgs on the /Airspeed_PubSubTopic and prints ou
 
 ## UML diagram
 
-![Sequence diagram](/docs/sequence_diagram.svg?raw=true "Sequence diagram")
+![Sequence diagram](/docs/sequence_diagram.svg?sanitize=true "Sequence diagram")
