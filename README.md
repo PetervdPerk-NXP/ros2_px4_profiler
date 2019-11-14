@@ -13,19 +13,4 @@ The ROS2 listener will listen to msgs on the /Airspeed_PubSubTopic and prints ou
 
 ## UML diagram
 
-
-```mermaid
-sequenceDiagram
-
-
-loop Every 500ms
-ros2_px4_profiler ->> micrortps_agent: DebugKeyValue
-micrortps_agent ->> micrortps_client: DebugKeyValue
-micrortps_client->> uorb_relay: DebugKeyValue
-uorb_relay ->> micrortps_client: AirSpeed
-micrortps_client->> micrortps_agent : AirSpeed
-micrortps_agent ->> ros2_px4_profiler : AirSpeed
-ros2_px4_profiler ->> ros2_px4_profiler : Print(timing)
-end
-```
-
+![Sequence diagram](/docs/sequence_diagram.svg?raw=true "Sequence diagram")
