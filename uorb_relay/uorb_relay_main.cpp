@@ -39,8 +39,8 @@
 
 #include "uorb_relay.h"
 
-#include <px4_app.h>
-#include <px4_init.h>
+#include <px4_platform_common/app.h>
+#include <px4_platform_common/init.h>
 #include <stdio.h>
 #include <string.h>
 
